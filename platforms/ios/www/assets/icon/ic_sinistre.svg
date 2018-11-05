@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="244px" height="252px" viewBox="0 0 244 252" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_sinistre</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <filter x="-15.5%" y="-135.7%" width="130.9%" height="437.8%" filterUnits="objectBoundingBox" id="filter-1">
+      <feOffset dx="0" dy="29" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="72.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"
+                     result="shadowMatrixOuter1"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="accueil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-417.000000, -177.000000)">
+    <g id="menu" filter="url(#filter-1)" transform="translate(-211.000000, 205.000000)" fill="#CBCED5"
+       fill-rule="nonzero">
+      <g id="Sinistres" transform="translate(615.000000, 0.000000)">
+        <g id="ic_sinistre" transform="translate(108.000000, 37.000000)">
+          <path
+            d="M52.0714286,3.875 L38.5714286,3.875 L38.5714286,1.9375 C38.5714286,0.868 37.7074286,0 36.6428571,0 L17.3571429,0 C16.2925714,0 15.4285714,0.868 15.4285714,1.9375 L15.4285714,3.875 L1.92857143,3.875 C0.864,3.875 0,4.743 0,5.8125 L0,60.0625 C0,61.132 0.864,62 1.92857143,62 L52.0714286,62 C53.1379286,62 54,61.132 54,60.0625 L54,5.8125 C54,4.743 53.1379286,3.875 52.0714286,3.875 Z M19.2857143,3.875 L34.7142857,3.875 L34.7142857,7.75 L19.2857143,7.75 L19.2857143,3.875 Z M11.5714286,7.75 L15.4285714,7.75 L15.4285714,9.6875 C15.4285714,10.757 16.2925714,11.625 17.3571429,11.625 L36.6428571,11.625 C37.7074286,11.625 38.5714286,10.757 38.5714286,9.6875 L38.5714286,7.75 L42.4285714,7.75 L42.4285714,50.375 L11.5714286,50.375 L11.5714286,7.75 Z M50.1428571,58.125 L3.85714286,58.125 L3.85714286,7.75 L7.71428571,7.75 L7.71428571,52.3125 C7.71428571,53.382 8.57828571,54.25 9.64285714,54.25 L44.3571429,54.25 C45.4236429,54.25 46.2857143,53.382 46.2857143,52.3125 L46.2857143,7.75 L50.1428571,7.75 L50.1428571,58.125 Z"
+            id="Shape"></path>
+          <polygon id="Shape"
+                   points="28.9285714 21.3125 28.9285714 17.4375 25.0714286 17.4375 25.0714286 21.3125 21.2142857 21.3125 21.2142857 25.1875 25.0714286 25.1875 25.0714286 29.0625 28.9285714 29.0625 28.9285714 25.1875 32.7857143 25.1875 32.7857143 21.3125"></polygon>
+          <rect id="Rectangle-path" x="15.4285714" y="34.875" width="23.1428571" height="3.875"></rect>
+          <rect id="Rectangle-path" x="15.4285714" y="42.625" width="23.1428571" height="3.875"></rect>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<div id="three-month-summary">
+  <div class="summary-header">
+    <ion-icon name="calendar"></ion-icon>
+    {{'Sur les 3 derniers mois' | uppercase}}
+  </div>
+  <div *ngIf="statsAreLoading">
+    <ion-spinner name="crescent"></ion-spinner>
+  </div>
+  <div class="gray-bordered">
+    <ion-row *ngIf="!statsAreLoading">
+      <ion-col col-4 text-center class="align-center">
+        <ba-progress-circle-bar
+          [progress]="stats.treatedFolders"
+          [total]="stats.totalFolders"></ba-progress-circle-bar>
+      </ion-col>
+      <ion-col class="pki-content" col-8>
+        <!--Make a reusable component-->
+        <div margin><strong class="cout-pki">{{stats.costs}}</strong> <strong class="dhs-pki">dhs</strong> <span
+          class="content-pki">Total de frais engagés</span></div>
+        <div class="hline-div"></div>
+        <div margin><strong class="cout-pki">{{stats.refundedAmount}}</strong> <strong class="dhs-pki">dhs</strong>
+          <span
+          class="content-pki">Total de frais remboursés</span></div>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>
+
+<ba-dashboard-section class="folders">
+  <div header>Mes dossiers</div>
+  <div body class="body">
+    <div *ngIf="folderIsLoading">
+      <ion-spinner name="crescent"></ion-spinner>
+    </div>
+    <ba-item-folder *ngFor="let folder of folders" [folder]="folder"></ba-item-folder>
+  </div>
+  <div footer class="footer">
+    <button ion-button (click)="displayAllFolders()" outline clear block no-padding>
+      <span class="footer-button">Accéder à tous mes dossiers</span>
+    </button>
+  </div>
+</ba-dashboard-section>
+
+<ba-dashboard-section class="complaints">
+  <div header>Mes réclamations</div>
+  <div body class="body">
+    <div *ngIf="complaintsIsLoading">
+      <ion-spinner name="crescent"></ion-spinner>
+    </div>
+    <ba-item-complaint *ngFor="let complaint of complaints" [complaint]="complaint"></ba-item-complaint>
+  </div>
+  <div footer class="footer">
+    <ion-row no-margin no-padding>
+      <ion-col col-10 no-margin no-padding>
+        <button ion-button (click)="displayAllComplaints()" outline clear block no-padding>
+          <span class="footer-button">Accéder à toutes mes réclamations</span>
+        </button>
+      </ion-col>
+      <ion-col col-2 no-margin no-padding align-self-center text-center>
+        <button ion-button clear class="footer-button" icon-only (click)="displayAddComplaint()">
+          <ion-icon name="ba-icon-add"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ba-dashboard-section>

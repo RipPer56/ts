@@ -1,0 +1,11 @@
+<ion-menu [content]="content" [persistent]="true" [enabled]="sideMenuEnabled">
+    <ion-buttons end>
+      <button ion-button icon-right clear menuClose>
+        <ion-icon name="close" color="dark"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ba-side-menu></ba-side-menu>
+</ion-menu>
+
+<ion-nav #content swipeBackEnabled="false"></ion-nav>
+<div class="bg-splash-image"></div>

@@ -1,0 +1,19 @@
+<ion-scroll scrollX="true" center>
+  <div class="inner" text-center>
+    <ng-container *ngFor="let item of menuItems">
+      <ng-container
+        *ngIf="isMenuHorizontal">
+        <ion-card class="menu-item"
+                  [ngClass]="{'menu-item-selected': (app.getActiveNavs()[0].getActive().id==item.component)}"
+                  (click)="clickMenuItem(item)">
+          <div>
+            <ion-icon name="{{item.ionIconName}}"></ion-icon>
+          </div>
+          <label class="menu-item-title">{{item.title}}</label>
+        </ion-card>
+      </ng-container>
+    </ng-container>
+  </div>
+</ion-scroll>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_filetype</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="sinistre_ajout_1-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-58.000000, -1026.000000)">
+    <g id="Pièce" transform="translate(58.000000, 1026.000000)">
+      <g id="ic_filetype">
+        <rect id="Rectangle" fill="#767E8E" x="0" y="0" width="74" height="74" rx="8.24964132"></rect>
+        <text id="JPEG" font-family="Roboto-Bold, Roboto" font-size="16.4992826" font-weight="bold"
+              letter-spacing="0.8249642" fill="#FFFFFF">
+          <tspan x="15.161008" y="15">JPEG</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

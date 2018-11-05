@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-header class="card-header">
+      <ng-content select="[header]"></ng-content>
+  </ion-card-header>
+  <ion-card-content no-padding class="card-body">
+    <ion-list no-lines>
+      <ng-content select="[body]"></ng-content>
+    </ion-list>
+  </ion-card-content>
+  <div class="card-footer">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</ion-card>

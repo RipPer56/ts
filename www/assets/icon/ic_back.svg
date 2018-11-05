@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="31px" viewBox="0 0 57 31" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_back</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="reclamation_ajout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-62.000000, -64.000000)">
+    <g id="Header" transform="translate(62.000000, 64.000000)" fill="#000000" fill-rule="nonzero">
+      <g id="ic_back">
+        <polygon id="Shape"
+                 points="56.905956 13.7145271 6.86234591 13.7145271 18.1420126 2.56473363 15.6071258 0.0590598634 0 15.4862049 15.6071258 30.9135862 18.1420126 28.4077943 6.86234591 17.2581189 56.905956 17.2581189"></polygon>
+      </g>
+    </g>
+  </g>
+</svg>

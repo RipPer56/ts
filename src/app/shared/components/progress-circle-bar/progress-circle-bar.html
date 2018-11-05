@@ -1,0 +1,23 @@
+<div align-items-center>
+  <div class="content-class progress-header" text-center>
+    <span class="first-number">{{progress}}</span><span>/{{total}}</span>
+  </div>
+  <div class="content-class progress-status">dossiers traités</div>
+  <circle-progress class="rogress-class"
+                   [percent]="(progress/total)*100"
+                   [radius]="45"
+                   [space]="-4"
+                   [outerStrokeWidth]="4"
+                   [innerStrokeWidth]="4"
+                   [outerStrokeColor]="'#2DB6C3'"
+                   [innerStrokeColor]="'#DCF3F5'"
+                   [animation]="true"
+                   [animationDuration]="0"
+                   [showTitle]="false"
+                   [showSubtitle]="false"
+                   [showUnits]="false">
+  </circle-progress>
+
+</div>
+
+

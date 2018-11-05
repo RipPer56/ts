@@ -1,0 +1,77 @@
+@import "../../../theme/variables.scss";
+
+page-add-complaint {
+  @include paint-detail-view($color-stable);
+
+  .color-text {
+    color: $light-black;
+    margin: 25px 25px 0 0;
+  }
+
+  .color-text-first {
+    color:$gray-light;
+    margin: 25px 25px 0 25px;
+  }
+
+  .title {
+    color: $blue;
+    margin: 0 25px 0 25px;
+    font-size: 28pt;
+  }
+
+  .text-desc {
+    color: $light-black;
+    font-size: 8pt;
+    margin-top: 10px;
+  }
+
+  .color-file {
+    color: $blue;
+    margin-top: 10px;
+  }
+
+  .text-label {
+    font-size: 8pt;
+    margin-left: 6px;
+
+  }
+
+  .item-margin {
+    margin-top: 8px;
+  }
+
+  .Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-class {
+    background-color: $light-black;
+  }
+
+  .error-style {
+    color: $red-be;
+    font-size: 8pt;
+  }
+
+  ion-footer {
+    .footer-button {
+      background-color: $blue;
+      &.activated {
+        background-color: $dark-gray;
+      }
+    }
+  }
+
+  .style-content{
+    margin: 0;
+    font-size: 8pt;
+  }
+
+  .div-file-style{
+    margin-top: 25px;
+    color:$gray-light;
+    font-weight: 600;
+  }
+}

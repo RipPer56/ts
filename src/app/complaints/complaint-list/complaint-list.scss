@@ -1,0 +1,71 @@
+complaint-list-page {
+  display: block;
+  @include paint-detail-view($blue);
+
+  ion-header {
+    color: white;
+    background: $light-blue;
+    ion-navbar {
+      margin: 0;
+      margin-left: 15px;
+      #back-button {
+        font-size: 1.5em;
+        background: white;
+      }
+    }
+    .page-header {
+      background: $light-blue;
+      padding: 15px;
+      .title {
+        color: $blue;
+        font-size: 35px;
+        font-weight: bold;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: block;
+      }
+
+      .num-results-found {
+        padding-top: 0;
+        margin-top: 0;
+        color: $blue;
+        font-size: 12px;
+      }
+    }
+  }
+
+  ba-item-complaint {
+    display: block;
+    margin: 6px;
+    ion-label {
+      margin: 0;
+    }
+  }
+
+  .line-horizontal {
+    @include hline($light-gray);
+  }
+
+  .list-style {
+    margin-top: 12px;
+  }
+  ion-spinner {
+    &.complaint-spinner {
+      &.spinner-crescent circle {
+        stroke: $blue;
+      }
+      height: 28px;
+      width: 100%;
+      horiz-align: center;
+      margin-top: 10px;
+    }
+    height: 28px;
+    width: 100%;
+    horiz-align: center;
+    margin-top: 10px;
+  }
+  .no-more-data {
+    text-align: center;
+    color: $dark-gray;
+  }
+}

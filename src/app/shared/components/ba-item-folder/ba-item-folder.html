@@ -1,0 +1,10 @@
+<ba-item [itemTitle]="folder.id | idPipe"
+         [bulletColor]="folder.status"
+         (click)="showFolderDetails()">
+  <p class="text-content"> Date de déclaration : {{ folder.declarationDate | date:'dd/MM/yyyy'}}
+  </p>
+  <p class="text-content"> Frais engagés: {{folder.fees | dhPipe}}
+    <strong *ngIf="folder.status==folderStatusColors.SENT">, Frais remboursés : {{folder.refundedAmount |
+      dhPipe}}</strong>
+  </p>
+</ba-item>

@@ -1,0 +1,12 @@
+ba-app-header {
+
+  //can't set font-weight like ios and wp with $toolbar-md-title-font-weight: 600;
+  .toolbar-title-md {
+    font-weight: 600;
+  }
+
+  .ion-row-class {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+}

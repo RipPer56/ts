@@ -1,0 +1,86 @@
+<form [formGroup]="registrationForm" (submit)="nextStep()">
+  <ion-row class="header-msg">
+    <ion-col>
+      <h1>Identification</h1>
+      <h3>Pour activer votre compte merci de renseigner les informations ci-dessous.</h3>
+    </ion-col>
+  </ion-row>
+  <div *ngIf="currentStep === registrationSteps.CIN">
+    <ion-item class="item-md input-box">
+      <ion-label>
+        <ion-icon name="ios-grid-outline"></ion-icon>
+      </ion-label>
+      <ion-input formControlName="cinForm" placeholder="CIN" type="text" touched-workaround></ion-input>
+    </ion-item>
+    <ion-row *ngIf="registrationForm.get('cinForm').invalid && registrationForm.get('cinForm').touched">
+      <h5>Doit être alphanumérique</h5>
+    </ion-row>
+    <!--TODO: verify Adherent Num's type text or number or alphanumeric-->
+    <ion-item class="item-md input-box">
+      <ion-label>
+        <ion-icon name="ios-grid-outline"></ion-icon>
+      </ion-label>
+      <ion-input formControlName="adherentNumForm" placeholder="Numéro d'adhérent" type="text"
+                 touched-workaround></ion-input>
+    </ion-item>
+  </div>
+  <div *ngIf="currentStep === registrationSteps.AdherentSelection">
+    <ion-item class="item-md input-box">
+      <ion-label>Sélectionner un adhérent</ion-label>
+      <ion-select [compareWith]="compareByAdherentId" block formControlName="adherentForm">
+        <ion-option *ngFor="let adherent of adherentsForCin" [value]="adherent"
+                    [disabled]="adherent.isRegistered">{{adherent.name}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <div *ngIf="currentStep === registrationSteps.ProfileCompletion">
+    <ion-item class="item-md input-box">
+      <ion-label>
+        <ion-icon name="md-mail"></ion-icon>
+      </ion-label>
+      <ion-input formControlName="emailForm" placeholder="Email" type="email" touched-workaround></ion-input>
+    </ion-item>
+    <ion-row *ngIf="registrationForm.get('emailForm').invalid && registrationForm.get('emailForm').touched">
+      <h5>Votre adresse emailForm est invalide</h5>
+    </ion-row>
+    <ion-item class="item-md input-box">
+      <ion-label>
+        <ion-icon name="md-lock"></ion-icon>
+      </ion-label>
+      <ion-input formControlName="passwordForm" placeholder="Mot de Passe"
+                 type="password" touched-workaround></ion-input>
+    </ion-item>
+    <ion-row *ngIf="registrationForm.get('passwordForm').invalid && registrationForm.get('passwordForm').touched">
+      <h5>Votre mot de passe doit contenir au moins 6 caractères</h5>
+    </ion-row>
+    <ion-item class="item-md input-box">
+      <ion-label>
+        <ion-icon name="md-lock"></ion-icon>
+      </ion-label>
+      <ion-input formControlName="confirmPasswordForm" placeholder="Confirmer votre mot de passe" type="password"
+                 touched-workaround></ion-input>
+    </ion-item>
+    <ion-row
+      *ngIf="registrationForm.get('confirmPasswordForm').invalid && registrationForm.get('confirmPasswordForm').touched">
+      <h5>les deux mots de passe doivent être identiques</h5>
+    </ion-row>
+  </div>
+  <ion-row>
+    <ion-col col-6 class="padding-left-0">
+      <button ion-button type="button" block class="button" (click)="previousStep()">
+        Retour
+      </button>
+    </ion-col>
+    <ion-col col-6 class="padding-right-0">
+      <button *ngIf="!lastStep" ion-button type="submit" block class="button" [disabled]="!registrationStepIsValid()">
+        Suivant
+      </button>
+      <button *ngIf="lastStep" ion-button type="submit" block class="button" color="light-black"
+              [disabled]="!registrationStepIsValid()">
+        Terminer
+      </button>
+    </ion-col>
+  </ion-row>
+</form>
+

@@ -1,0 +1,56 @@
+<ion-header no-border transparent>
+  <ion-navbar transparent hideBackButton>
+    <ng-container *ngIf="!this.navCtrl.getPrevious();else other">
+      <ion-col col-2 text-center>
+        <ion-icon name="my-header-menu" menuToggle></ion-icon>
+      </ion-col>
+    </ng-container>
+    <ng-template #other>
+      <ion-buttons left>
+        <button ion-button navPop icon-only>
+          <ion-icon name="back-button"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ng-template>
+  </ion-navbar>
+  <div class="page-header">
+    <ion-label class="title">
+      Mes dossiers
+    </ion-label>
+    <ion-label class="num-results-found">
+      {{folders.length}} résultats affichés
+    </ion-label>
+  </div>
+</ion-header>
+<ion-content>
+  <ion-list class="list-style">
+    <div *ngIf="isLoading">
+      <ion-spinner class="folder-spinner" name="crescent"></ion-spinner>
+    </div>
+    <ng-container *ngFor="let folder of folders; let i = index">
+      <ion-row>
+        <ion-col no-padding no-margin col-11>
+          <ba-item-folder [folder]="folder">
+          </ba-item-folder>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="i != folders.length-1">
+        <ion-col offset-1 col-10>
+          <div class="line-horizontal"></div>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+  </ion-list>
+
+  <ion-infinite-scroll [enabled]="true" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingText="Chargement de dossiers..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <ion-row *ngIf="noMoreData" class="no-more-data">
+    <ion-label>
+      Il n'y a plus de dossiers à afficher.
+    </ion-label>
+  </ion-row>
+</ion-content>
+
+
+

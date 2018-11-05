@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="96px" viewBox="0 0 78 96" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_ marker_active</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="map_detail_1-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-399.000000, -946.000000)">
+    <g id="custom" transform="translate(0.000000, 467.000000)" fill="#1B7E87" fill-rule="nonzero">
+      <g id="ic_-marker_active" transform="translate(399.000000, 479.000000)">
+        <path
+          d="M38.6785714,0 C17.3172269,0 0,17.3320728 0,38.7117302 C0,58.1064942 24.0987395,83.6241499 34.2542017,93.5170775 C36.7415966,95.9351151 40.6743697,95.9855785 43.210084,93.6159016 C53.4264706,84.0846283 77.3571429,59.5299824 77.3571429,38.7096276 C77.355042,17.3320728 60.039916,0 38.6785714,0 Z M38.6785714,51.2897309 C29.8466387,51.2897309 22.6911765,44.1281344 22.6911765,35.2907327 C22.6911765,26.4533311 29.8466387,19.2896319 38.6785714,19.2896319 C47.5084034,19.2896319 54.6617647,26.4512284 54.6617647,35.2907327 C54.6617647,44.130237 47.5084034,51.2897309 38.6785714,51.2897309 Z"
+          id="Shape"></path>
+      </g>
+    </g>
+  </g>
+</svg>

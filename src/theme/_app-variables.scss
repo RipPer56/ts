@@ -1,0 +1,118 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+$ionicons-font-path: "../assets/fonts";
+$icons-path: "../theme/icons/fonts";
+$font-family-base: SourceSansPro, sans-serif !default;
+$font-family-ios-base: SourceSansPro, sans-serif !default;
+$font-family-md-base: SourceSansPro, sans-serif !default;
+$font-family-wp-base: SourceSansPro, sans-serif !default;
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+$default-icon-size: 20px;
+
+@import "../../node_modules/ionic-angular/themes/ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$color-primary: #00aed4;
+$color-secondary: #43eaa9;
+$color-danger: #f5846f;
+$color-light: #f4f4f4;
+$color-dark: #222;
+$color-neutral: #6b6b6b;
+$color-neutral-border: lighten($color-neutral, 30%);
+$color-energized: #ffd839;
+$color-emphasis: #e7683a;
+$color-stable: #ffffff;
+$color-dark-bg: rgba(34, 34, 34, 0.8);
+
+$blue-green: #2DB6C3;
+$light-black: #4a4a4a;
+$blue: #2380C4;
+$red-be:#f53d3d;
+
+$colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  danger: $color-danger,
+  light: $color-light,
+  dark: $color-dark,
+  neutral: $color-neutral,
+  neutral-border: $color-neutral-border,
+  energized: $color-energized,
+  emphase: $color-emphasis,
+  stable: $color-stable,
+  dark-bg: $color-dark-bg,
+  alternate: #2c84c7,
+  warning: #f17d00,
+  text: #4a4a4a,
+  input-bg: #e8ebf1,
+  input-text: #8e8f90,
+  toolbar-bg: #ffffff,
+  card-title-text: #2db6c3,
+  card-title-bg: #dcf3f5,
+  card-content-text: #a9adb8,
+  bullet-green: #32db64,
+  bullet-red: $red-be,
+  bullet-orange: #f07c00,
+  bullet-gray: #a9adb8,
+  cancel: #a9adb8,
+  title: #6d7586,
+  border: #ddd,
+  blue-black:$blue,
+  light-black: $light-black,
+);
+$dark-gray: #6A6A77;
+$gray: #767E8E;
+$light-gray: #eee;
+$dove-gray: #B3B8C2;
+$light-blue-green: #DCF3F5;
+$light-blue: #E7F1F9;
+$green: #13CE66;
+$orange: #F17D00;
+$red: #D0021B;
+$gray-light:#999;
+
+// App iOS Variables
+// ------------------------------------------------ionic --
+// iOS only Sass variables can go here
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+$root: '..';
+$list-background-color: transparent;
+
+// Date picker background color
+$picker-md-background-color: white;
+$picker-ios-background-color: white;
+$picker-wp-background-color: white;
+
+$segment-button-md-text-color-activated: color($colors, dark);
+$img-placeholder-background: transparent;
+$toolbar-ios-title-font-weight: 600;
+//$toolbar-md-title-font-weight: 600;
+$toolbar-wp-title-font-weight: 600;

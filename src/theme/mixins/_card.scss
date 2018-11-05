@@ -1,0 +1,17 @@
+@mixin dashboard-section-colors($textColor,$bgColor) {
+  button span {
+      color: $textColor;
+  }
+  .card-header {
+    background: $bgColor;
+    color: $textColor;
+  }
+
+  .card-footer {
+    color: $textColor;
+  }
+
+  ion-spinner * {
+    stroke: $textColor;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "beassur",
+  "app_id": "e771a2af",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

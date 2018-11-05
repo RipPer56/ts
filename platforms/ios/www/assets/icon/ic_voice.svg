@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="88px" height="86px" viewBox="0 0 88 86" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_voice</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <ellipse id="path-1" cx="44" cy="42.5526316" rx="44" ry="42.5526316"></ellipse>
+  </defs>
+  <g id="reclamation_ajout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-926.000000, -1002.000000)">
+    <g id="Description" transform="translate(62.000000, 1002.078947)">
+      <g id="ic_voice" transform="translate(864.000000, 0.065789)">
+        <mask id="mask-2" fill="white">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Oval-3" fill="#13CE66" xlink:href="#path-1"></use>
+        <g id="radio-microphone" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+          <g transform="translate(29.470588, 17.521672)" id="Shape">
+            <path
+              d="M25.4,26.7518382 C25.4,31.2104779 20.7411765,35.6691176 16.0823529,35.6691176 L12.9764706,35.6691176 C8.31764706,35.6691176 3.65882353,31.2104779 3.65882353,26.7518382 L3.65882353,17.8345588 L0.552941176,17.8345588 L0.552941176,26.7518382 C0.552941176,32.6966912 6.76470588,38.6415441 12.9764706,38.6415441 L12.9764706,44.5863971 L3.65882353,44.5863971 L3.65882353,47.5588235 L25.4,47.5588235 L25.4,44.5863971 L16.0823529,44.5863971 L16.0823529,38.6415441 C22.2941176,38.6415441 28.5058824,32.6966912 28.5058824,26.7518382 L28.5058824,17.8345588 L25.4,17.8345588 L25.4,26.7518382 Z"></path>
+            <path
+              d="M16.0668235,32.6966912 C19.5081412,32.6966912 22.2941176,30.0215074 22.2941176,26.7756176 L22.2941176,5.92107353 C22.2941176,2.65140441 19.5174588,0 16.0668235,0 L12.992,0 C9.55068235,0 6.76470588,2.67518382 6.76470588,5.92107353 L6.76470588,26.7756176 C6.76470588,30.0452868 9.54136471,32.6966912 12.992,32.6966912 L16.0668235,32.6966912 Z"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

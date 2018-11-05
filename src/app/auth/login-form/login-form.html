@@ -1,0 +1,53 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <ion-row class="header-msg">
+    <ion-col>
+      <h1>Bienvenue</h1>
+      <h3>Connectez-vous pour accéder à votre espace personnel</h3>
+    </ion-col>
+  </ion-row>
+  <ion-item class="item-md input-box">
+    <ion-label>
+      <ion-icon name="md-person"></ion-icon>
+    </ion-label>
+    <ion-input formControlName="email" placeholder="Email" type="email"
+               touched-workaround></ion-input>
+  </ion-item>
+  <ion-row *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+    <h5>Cette adresse email est invalide</h5>
+  </ion-row>
+  <ion-item class="item-md input-box">
+    <ion-label>
+      <ion-icon name="md-lock"></ion-icon>
+    </ion-label>
+    <ion-input formControlName="password" placeholder="Mot de passe"
+               type="password" touched-workaround clearOnEdit="false"></ion-input>
+  </ion-item>
+  <ion-row *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
+    <h5>Votre mot de passe est invalide</h5>
+  </ion-row>
+  <section class="login-flex-row">
+    <ion-item no-lines no-padding class="remember-me login-flex-item">
+      <ion-label>Se souvenir de moi</ion-label>
+      <ion-checkbox class="ba-checkbox" formControlName="remember" (ionChange)="rememberMe()"></ion-checkbox>
+    </ion-item>
+    <button type="button" ion-item no-lines detail-none class="forgot-password login-flex-item" clear
+            (click)="resetPassword()">
+      <a>Mot de passe oublié ?</a>
+    </button>
+  </section>
+  <ion-row>
+    <ion-col>
+      <button type="submit" ion-button block class="button" [disabled]="!loginForm.valid">
+        Se connecter
+      </button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button type="button" ion-button block class="button" color="light-black" (click)="signUp()">
+        S'enregistrer
+      </button>
+    </ion-col>
+  </ion-row>
+</form>
+

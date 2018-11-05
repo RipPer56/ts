@@ -1,0 +1,14 @@
+<ion-content no-padding class="auth-page">
+  <ion-img class="logo" src="assets/imgs/beassur_logo.png"></ion-img>
+  <ion-img class="header-img" src="assets/imgs/background.png"></ion-img>
+  <ba-login-form *ngIf="displayedFrom == authForms.LOGIN"
+                 (displayForm)="displayForm($event)">
+
+  </ba-login-form>
+  <ba-reset-password-form *ngIf="displayedFrom == authForms.RESET_PASSWORD"
+                          (displayForm)="displayForm($event)">
+  </ba-reset-password-form>
+  <ba-register-form *ngIf="displayedFrom == authForms.REGISTER"
+                    (displayForm)="displayForm($event)">
+  </ba-register-form>
+</ion-content>

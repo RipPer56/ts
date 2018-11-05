@@ -1,0 +1,60 @@
+<ion-header no-border transparent>
+  <ion-navbar transparent hideBackButton>
+    <ng-container *ngIf="!this.navCtrl.getPrevious();else other">
+      <ion-col col-2 text-center>
+        <ion-icon name="my-header-menu" menuToggle></ion-icon>
+      </ion-col>
+    </ng-container>
+    <ng-template #other>
+      <ion-buttons left>
+        <button ion-button navPop icon-only>
+          <ion-icon name="back-button"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ng-template>
+    <ion-buttons right>
+      <button ion-button clear class="footer-button" icon-only (click)="displayAddComplaint()" small>
+        <ion-icon name="ba-icon-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <div class="page-header">
+    <ion-label class="title">
+      Mes réclamations
+    </ion-label>
+    <ion-label class="num-results-found">
+      {{complaints.length}} résultats affichés
+    </ion-label>
+  </div>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-list class="list-style">
+    <div *ngIf="isloading">
+      <ion-spinner class="complaint-spinner" name="crescent"></ion-spinner>
+    </div>
+    <ng-container *ngFor="let complaint of complaints; let i = index">
+      <ion-row>
+        <ion-col no-padding no-margin col-11>
+          <ba-item-complaint [complaint]="complaint">
+          </ba-item-complaint>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="i != complaints.length-1">
+        <ion-col offset-1 col-10>
+          <div class="line-horizontal"></div>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+  </ion-list>
+  <ion-infinite-scroll [enabled]="true" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingText="Chargement de réclamations..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <ion-row *ngIf="noMoreData" class="no-more-data">
+    <ion-label>
+      Il n'y a plus de réclamations à afficher.
+    </ion-label>
+  </ion-row>
+</ion-content>
+
+

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar transparent class="nav-bar" hideBackButton>
+    <button ion-button navPop icon-only left clear>
+      <ion-icon name="back-button" id="back-button"></ion-icon>
+    </button>
+  </ion-navbar>
+  <div class="page-header">
+    <div *ngIf="complaint">
+      <ion-row>
+        <ion-col class="header-labels">
+            <span>
+              Réclamation n°
+            </span>
+        </ion-col>
+        <ion-col class="header-labels right">
+            <span class="declaration-date">
+              Emise le <span class="capitalize">{{complaint.declarationDate | date:'dd MMMM yyyy'}}</span>
+            </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-label no-margin class="title">
+          {{complaint.id | idPipe}}
+        </ion-label>
+      </ion-row>
+    </div>
+    <div *ngIf="!complaint">
+      <ion-row>
+        <h1 class="not-found">
+            Réclamation Inexistante
+        </h1>
+      </ion-row>
+    </div>
+  </div>
+</ion-header>
+
+
+<ion-content class="content">
+  <ion-grid *ngIf="complaint">
+    <ion-row>
+      <ion-col col-6 class="label" no-padding>Numéro du dossier</ion-col>
+      <ion-col col-5 offset-1 class="label" no-padding>Statut</ion-col>
+    </ion-row>
+    <ion-row class="margin-bottom-20">
+      <ion-col col-6 class="value" no-padding>{{complaint.folderId}}</ion-col>
+      <ion-col col-5 offset-1 class="value {{complaint.status}}-text" no-padding>{{complaintStatus[complaint.status]}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="label" no-padding>Raison</ion-col>
+    </ion-row>
+    <ion-row class="margin-bottom-20">
+      <ion-col col-12 class="value" no-padding>{{complaint.reason}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 class="label" no-padding>Description</ion-col>
+    </ion-row>
+    <ion-row class="margin-bottom-20">
+      <ion-col col-12 class="value description" no-padding>{{complaint.description}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+

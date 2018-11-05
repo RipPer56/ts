@@ -1,0 +1,66 @@
+<ion-header no-border transparent>
+  <ion-navbar transparent hideBackButton>
+    <button ion-button navPop icon-only left clear>
+      <ion-icon name="back-button" color="dark"></ion-icon>
+    </button>
+  </ion-navbar>
+  <div class="color-text-first">
+    J'effectue une
+  </div>
+  <div class="title">
+    <strong>Réclamation</strong>
+  </div>
+</ion-header>
+
+
+<ion-content>
+
+  <form [formGroup]="complaintForm" id="ngForm" (submit)="sendComplaint()">
+    <ion-item no-padding>
+      <ion-label class="color-text" stacked>Numéro du dossier</ion-label>
+      <ion-input type="text" [value]="folderId" formControlName="folderId"></ion-input>
+    </ion-item>
+    <ion-row *ngIf="complaintForm.get('folderId').invalid && complaintForm.get('folderId').touched">
+      <h5 class="error-style">Cet identifiant de dossier est invalid</h5>
+    </ion-row>
+
+    <ion-item no-padding>
+      <ion-label class="color-text" stacked>Raison</ion-label>
+      <ion-select placeholder="Selectionner le motif de votre réclamation" formControlName="reasonComplaint">
+          <ion-option *ngFor="let reason of reasons;let i = index"
+                      [value]="i">{{reason.msg}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-row *ngIf="complaintForm.get('reasonComplaint').invalid && complaintForm.get('reasonComplaint').touched">
+      <h5 class="error-style">votre raison est invalid</h5>
+    </ion-row>
+
+
+    <ion-item no-padding>
+      <ion-label class="color-text" stacked>Description
+        <p class="text-desc">Saisissez la description de votre réclamation</p>
+      </ion-label>
+      <ion-textarea formControlName="descComplaint"></ion-textarea>
+    </ion-item>
+    <ion-row *ngIf="complaintForm.get('descComplaint').invalid && complaintForm.get('descComplaint').touched">
+      <h5 class="error-style">votre description est invalid</h5>
+    </ion-row>
+
+    <div class="div-file-style">
+      <label class="color-text-first style-content">Pièce(s) justificative(s) téléchargée(s)</label>
+      <ion-row class="color-file" text-center>
+        <div class="Aligner">
+          <input hidden type="file" name="file" id="file"/>
+          <ion-icon name="piece-jointe"></ion-icon>
+          <label class="text-label" for="file"> Ajouter un justificatif</label>
+        </div>
+      </ion-row>
+    </div>
+  </form>
+</ion-content>
+<ion-footer>
+  <button no-margin no-padding ion-button block class="footer-button"
+          [disabled]="!complaintForm.valid" form="ngForm" type="submit">
+    Envoyer
+  </button>
+</ion-footer>

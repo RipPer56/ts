@@ -1,0 +1,33 @@
+ba-login-form {
+
+  .forgot-password {
+    font-size: x-small;
+    & ion-label {
+      margin-right: 0;
+    }
+    &.item .item-inner {
+      padding-right: 0;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .remember-me {
+    font-size: small;
+    .ba-checkbox {
+      margin: 9px 9px 9px 4px !important;
+    }
+  }
+
+  .login-flex-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login-flex-item {
+    display: flex;
+    width: auto;
+  }
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="58px" viewBox="0 0 47 58" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_marker_black</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="map" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-586.000000, -1205.000000)">
+    <g id="markers" transform="translate(242.000000, 499.000000)" fill="#313131">
+      <g id="ic_marker_black" transform="translate(339.000000, 700.000000)">
+        <g id="marker">
+          <g transform="translate(5.000000, 6.000000)" id="Shape">
+            <path
+              d="M23.5,0 C10.5214546,0 0,10.5414826 0,23.5447332 C0,35.3407583 14.6417088,50.8607671 20.8118788,56.8777119 C22.3231492,58.3483785 24.7125903,58.3790707 26.2532182,56.9378174 C32.4604041,51.1408332 47,36.2065334 47,23.5434543 C46.9987236,10.5414826 36.4785454,0 23.5,0 Z M23.5,31.1947573 C18.1339688,31.1947573 13.7865135,26.8390264 13.7865135,21.4640596 C13.7865135,16.0890928 18.1339688,11.7320831 23.5,11.7320831 C28.8647548,11.7320831 33.2109337,16.087814 33.2109337,21.4640596 C33.2109337,26.8403053 28.8647548,31.1947573 23.5,31.1947573 Z"
+              fill-rule="nonzero"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

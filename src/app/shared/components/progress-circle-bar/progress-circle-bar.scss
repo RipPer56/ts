@@ -1,0 +1,31 @@
+ba-progress-circle-bar {
+
+  width: 100px;
+  display: inline-block;
+  .progress-class {
+    position: relative;
+  }
+
+  .content-class {
+    position: absolute;
+    text-align: center;
+    color: $light-black;
+    width: 100px;
+    margin-left: 3px;
+  }
+
+  .progress-header {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .progress-status {
+    margin-top: 60px;
+    font-size: 10px;
+  }
+
+  .first-number {
+    font-size: 35px;
+    color: $color-dark;
+  }
+}

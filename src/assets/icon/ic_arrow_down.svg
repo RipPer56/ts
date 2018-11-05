@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="17px" viewBox="0 0 29 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <title>ic_arrow_down</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="reclamation_ajout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+     transform="translate(-988.000000, -868.000000)">
+    <g id="Raison" transform="translate(64.000000, 769.039474)" fill="#000000" fill-rule="nonzero">
+      <g id="ic_arrow_down"
+         transform="translate(938.792496, 106.574465) scale(1, -1) rotate(93.000000) translate(-938.792496, -106.574465) translate(929.792496, 92.074465)">
+        <path
+          d="M0.450731707,15.4260661 L15.4858537,27.7823101 C15.6726829,27.9362213 15.9073171,28.0118501 16.1414634,28.0118501 C16.4073171,28.0118501 16.6717073,27.9136654 16.8643902,27.7212763 C17.2258537,27.3594963 17.1960976,26.8000201 16.7965854,26.4722952 L2.33707317,14.5883996 L15.4439024,1.47807887 C15.8058537,1.11629894 15.7756098,0.556822649 15.3760976,0.229097802 C14.977561,-0.0990693196 14.3604878,-0.0712060735 13.9985366,0.290573853 L0.369756098,13.9227776 C0.155609756,14.1372804 0.0819512195,14.4207778 0.13804878,14.6848153 C0.109268293,14.9537177 0.212682927,15.2310233 0.450731707,15.4260661 Z"
+          id="Shape"></path>
+      </g>
+    </g>
+  </g>
+</svg>

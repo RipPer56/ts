@@ -1,0 +1,148 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "../../node_modules/ionic-angular/themes/ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+@import "../../node_modules/ionic-angular/themes/ionic.ionicons";
+// Fonts
+// --------------------------------------------------
+@import "../theme/variables";
+
+ion-icon {
+
+  &[class*="my-menu"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 10px;
+  }
+  &[class*="my-menu-accueil"] {
+    mask-image: url(../assets/icon/ic_home.svg);
+  }
+  &[class*="my-menu-complaint"] {
+    mask-image: url(../assets/icon/ic_discuss_issue.svg);
+  }
+  &[class*="my-menu-sinistre"] {
+    mask-image: url(../assets/icon/ic_document.svg);
+  }
+
+  &[class*="be-assure"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+
+  &[class*="be-assure-home"] {
+    mask-image: url(../assets/icon/ic_home.svg);
+  }
+  &[class*="be-assure-folder"] {
+    mask-image: url(../assets/icon/ic_document.svg);
+  }
+  &[class*="be-assure-complaint"] {
+    mask-image: url(../assets/icon/ic_discuss_issue.svg);
+  }
+  &[class*="be-assure-logout"] {
+    mask-image: url(../assets/icon/ic_logout.svg);
+  }
+
+  &[class*="back-button"] {
+    mask-image: url(../assets/icon/ic_back.svg);
+    background: $light-black;
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  &[class*="ba-icon"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+
+  &[class*="ba-icon-add"] {
+    mask-image: url(../assets/icon/ic_add_item.svg);
+  }
+
+  &[class*="my-header-menu"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: $light-black;
+    width: 1.5em;
+    height: 1.5em;
+    mask-image: url(../assets/icon/ic_menu.svg);
+  }
+
+  &[class*="piece-jointe"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+    mask-image: url(../assets/icon/ic_attach.svg);
+  }
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.green-text {
+  color: $green
+}
+
+.orange-text {
+  color: $orange;
+}
+
+.red-text {
+  color: $red;
+}
+
+.gray-text {
+  color: $dove-gray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

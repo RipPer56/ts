@@ -1,0 +1,21 @@
+<ion-row>
+  <ion-col offset-2 col-8 text-center>
+    <img class="img-structure" src="assets/imgs/beassur_logo.png"/>
+  </ion-col>
+</ion-row>
+
+<ion-list class="ion-list-structure">
+  <div class="hline"></div>
+    <ion-item class="ion-item-structure" *ngFor="let page of pages" no-padding no-border no-margin
+              (click)="clickMenuItem(page)" menuClose>
+      <ng-container *ngIf="app!=undefined && app.getActiveNavs()!=undefined && app.getActiveNavs().length!=0
+                  && app.getActiveNavs()[0].getActive()!=undefined">
+        <ion-row  [ngClass]="{'ion-item-active': (app.getActiveNavs()[0].getActive().id==page.component)}" >
+          <ion-col col-2>
+            <ion-icon name="{{page.icon}}"></ion-icon>
+          </ion-col>
+          <ion-col col-6>{{page.title}}</ion-col>
+        </ion-row>
+      </ng-container>
+    </ion-item>
+</ion-list>

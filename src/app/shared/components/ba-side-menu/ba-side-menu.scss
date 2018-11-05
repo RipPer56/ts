@@ -1,0 +1,28 @@
+ba-side-menu {
+
+  .ion-item-active {
+    color: $blue-green;
+  }
+
+  .ion-item-simple {
+    color: $light-black;
+  }
+
+
+  .img-structure {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ion-list-structure {
+    margin-top: 40px;
+  }
+
+  .ion-item-structure {
+    margin-left: 20px;
+  }
+
+  .hline {
+    @include hline($light-gray);
+  }
+}

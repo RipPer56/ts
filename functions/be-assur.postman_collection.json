@@ -1,0 +1,253 @@
+{
+  "id": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+  "name": "be-assur",
+  "description": "",
+  "order": [],
+  "folders": [
+    {
+      "name": "Complaints",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "order": [
+        "1a0cd96b-82cd-90b7-62d0-6c624d46d30e"
+      ],
+      "owner": 0,
+      "folders_order": [],
+      "id": "7bcb0c79-e21f-a221-d9c4-af350b5cf9ce"
+    },
+    {
+      "name": "Folders",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "order": [
+        "3a7f2759-217c-f03c-a80a-5391f68f9ecd"
+      ],
+      "owner": 0,
+      "folders_order": [],
+      "id": "8f38e65b-b060-1974-d6ca-92d5d0de487a"
+    },
+    {
+      "name": "adherents",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "order": [
+        "13fd6383-aefd-eeb9-b70f-957937fc7c3e"
+      ],
+      "owner": 0,
+      "folders_order": [],
+      "id": "d129089d-1615-ca8b-df3c-1d480832f65e"
+    },
+    {
+      "name": "sales-force",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "order": [
+        "4b9aef15-7dcb-0733-b542-9c8040c0b9fb",
+        "f2a6e267-b2ab-3c04-49fd-3c7789ccb356",
+        "4718334b-ca17-1077-29d4-ff37cffe46ea"
+      ],
+      "owner": 0,
+      "folders_order": [],
+      "id": "b27fb2d5-1453-1469-7c49-ecb3ab7cbdbf"
+    }
+  ],
+  "folders_order": [
+    "b27fb2d5-1453-1469-7c49-ecb3ab7cbdbf",
+    "d129089d-1615-ca8b-df3c-1d480832f65e",
+    "8f38e65b-b060-1974-d6ca-92d5d0de487a",
+    "7bcb0c79-e21f-a221-d9c4-af350b5cf9ce"
+  ],
+  "timestamp": 1519209428256,
+  "owner": 0,
+  "public": false,
+  "requests": [
+    {
+      "id": "13fd6383-aefd-eeb9-b70f-957937fc7c3e",
+      "headers": "",
+      "headerData": [],
+      "url": "https://us-central1-beassur-assurance.cloudfunctions.net/api/adherents/k498222",
+      "queryParams": [],
+      "pathVariables": {},
+      "pathVariableData": [],
+      "preRequestScript": null,
+      "method": "GET",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "data": null,
+      "dataMode": "params",
+      "name": "Get Adherents by CIN",
+      "description": "",
+      "descriptionFormat": "html",
+      "time": 1519751765861,
+      "version": 2,
+      "responses": [],
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "folder": "d129089d-1615-ca8b-df3c-1d480832f65e"
+    },
+    {
+      "id": "1a0cd96b-82cd-90b7-62d0-6c624d46d30e",
+      "headers": "",
+      "headerData": [],
+      "url": "https://us-central1-beassur-assurance.cloudfunctions.net/api/complaints/123456",
+      "queryParams": [],
+      "pathVariables": {},
+      "pathVariableData": [],
+      "preRequestScript": null,
+      "method": "GET",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "data": null,
+      "dataMode": "params",
+      "name": "https://us-central1-beassur-assurance.cloudfunctions.net/api/complaints/123456",
+      "description": "",
+      "descriptionFormat": "html",
+      "time": 1519751917963,
+      "version": 2,
+      "responses": [],
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "folder": "7bcb0c79-e21f-a221-d9c4-af350b5cf9ce"
+    },
+    {
+      "id": "3a7f2759-217c-f03c-a80a-5391f68f9ecd",
+      "headers": "",
+      "headerData": [],
+      "url": "https://us-central1-beassur-assurance.cloudfunctions.net/api/folders/123456",
+      "queryParams": [],
+      "preRequestScript": null,
+      "pathVariables": {},
+      "pathVariableData": [],
+      "method": "GET",
+      "data": null,
+      "dataMode": "params",
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "time": 1519752038759,
+      "name": "Get Folders by User ID",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "responses": []
+    },
+    {
+      "id": "4718334b-ca17-1077-29d4-ff37cffe46ea",
+      "headers": "",
+      "headerData": [],
+      "url": "https://test.salesforce.com/services/oauth2/revoke",
+      "queryParams": [],
+      "pathVariables": {},
+      "pathVariableData": [],
+      "preRequestScript": null,
+      "method": "POST",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "data": null,
+      "dataMode": "params",
+      "name": "revoke_url ",
+      "description": "",
+      "descriptionFormat": "html",
+      "time": 1519210277992,
+      "version": 2,
+      "responses": [],
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "folder": "b27fb2d5-1453-1469-7c49-ecb3ab7cbdbf"
+    },
+    {
+      "id": "4b9aef15-7dcb-0733-b542-9c8040c0b9fb",
+      "headers": "Content-Type: application/json\n",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "url": "https://test.salesforce.com/services/oauth2/authorize",
+      "folder": "b27fb2d5-1453-1469-7c49-ecb3ab7cbdbf",
+      "queryParams": [],
+      "preRequestScript": null,
+      "pathVariables": {},
+      "pathVariableData": [],
+      "method": "POST",
+      "data": [],
+      "dataMode": "raw",
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "time": 1519212885547,
+      "name": "authorization_url",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "responses": [],
+      "rawModeData": ""
+    },
+    {
+      "id": "f2a6e267-b2ab-3c04-49fd-3c7789ccb356",
+      "headers": "Content-Type: application/json\n",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "url": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9rKhT8ocoxGnQGnvIMLykFH0.aNWMXDMg9VV83n5cd.NE5PfhQH568X0KzRlm_zGw0VtaV57pn259HqyK&client_secret=3864499418666034326&username=beassurmobile@beassur.com&password=Beassur@123vcIHwTpTbDc7r3FSo72vwAFLh",
+      "folder": "b27fb2d5-1453-1469-7c49-ecb3ab7cbdbf",
+      "queryParams": [
+        {
+          "key": "grant_type",
+          "value": "password",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "client_id",
+          "value": "3MVG9rKhT8ocoxGnQGnvIMLykFH0.aNWMXDMg9VV83n5cd.NE5PfhQH568X0KzRlm_zGw0VtaV57pn259HqyK",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "client_secret",
+          "value": "3864499418666034326",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "username",
+          "value": "beassurmobile@beassur.com",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "password",
+          "value": "Beassur@123vcIHwTpTbDc7r3FSo72vwAFLh",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "preRequestScript": null,
+      "pathVariables": {},
+      "pathVariableData": [],
+      "method": "POST",
+      "data": [],
+      "dataMode": "params",
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "time": 1519211894560,
+      "name": "token_url",
+      "description": "",
+      "collectionId": "9ecabe8b-c58e-236c-98f9-c497e86959af",
+      "responses": []
+    }
+  ]
+}

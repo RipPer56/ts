@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.beassur.app"
+    },
+    "com.telerik.plugins.nativepagetransitions": {
+      "PACKAGE_NAME": "com.beassur.app"
+    }
+  },
+  "dependent_plugins": {}
+}

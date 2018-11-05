@@ -1,0 +1,11 @@
+<ba-item [bulletColor]="complaint.status"
+         [itemTitle]="complaint.reason"
+         (click)="showComplanitsDetails()">
+  <p class="folder-id">
+    {{complaint.folderId | idPipe}}
+  </p>
+  <p class="text-content">
+    {{complaint.description}}
+  </p>
+</ba-item>
+

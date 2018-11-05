@@ -1,0 +1,35 @@
+ba-item {
+  display: block;
+  .label {
+    margin: 5px 0;
+  }
+
+  .item-header {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .text-content {
+    font-size: 12px;
+    margin: 4px 0 4px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .green-bullet {
+    @include colored-bullet($green)
+  }
+
+  .orange-bullet {
+    @include colored-bullet($orange)
+  }
+
+  .red-bullet {
+    @include colored-bullet($red)
+  }
+
+  .gray-bullet {
+    @include colored-bullet($dove-gray)
+  }
+}
